@@ -1,6 +1,12 @@
 import React from 'react';
+import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import CloudlySun from "../../assets/Images/cloudly-sun.png";
 import Precipitation from "../../assets/Images/precipitation.png";
+import Humidity from "../../assets/Images/humidity.png";
+import Cloud from "../../assets/Images/cloud.png";
+import Wind from "../../assets/Images/wind.png";
+import UVIndex from "../../assets/Images/glasses.png";
+import Visibility from "../../assets/Images/view.png";
 
 const Main = () => {
   return (
@@ -8,7 +14,7 @@ const Main = () => {
       {/* Block 1 */}
       <div className='flex flex-col sm:flex-col md:flex-row w-full justify-between gap-5'>
         {/* Left block */}
-        <div className='bg-transparent border-[#68676A] rounded-3xl border-[1.5px] p-8 w-full md:w-1/4'>
+        <div className='bg-transparent border-green-400 rounded-3xl border-[1.5px] p-8 w-full md:w-1/4'>
           <img className='mb-4' src={CloudlySun} alt="Cloudly" width={50} height={50} />
           <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>10 °C</h2>
           <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like 10 °C</p>
@@ -18,17 +24,14 @@ const Main = () => {
         </div>
 
         {/* Right block */}
-        <div className='w-full md:w-3/4 flex flex-col p-8 justify-center items-stretch gap-10 bg-transparent border-[#68676A] rounded-3xl border-[1.5px]'>
+        <div className='w-full md:w-3/4 flex flex-col p-8 justify-center items-stretch gap-10 bg-transparent border-green-400 rounded-3xl border-[1.5px]'>
           <div className='grid grid-cols-2 md:grid-cols-3 gap-10'>
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className='flex flex-col items-center'>
-                <div className='flex items-center justify-center gap-1'>
-                  <img src={Precipitation} alt="Precipitation" width={15} height={15} />
-                  <span className='text-[#F0EFEF] text-[12px] sm:text-[18px]'>0 in/h</span>
-                </div>
-                <p className='text-[#F0EFEF] text-[12px] sm:text-[18px] opacity-80'>Precipitation</p>
-              </div>
-            ))}
+            <WeatherInfo img={Precipitation} info={"0 in/h"} body={"Precipitation"}/>
+            <WeatherInfo img={Humidity} info={"48%"} body={"Humidity"}/>
+            <WeatherInfo img={Cloud} info={"50%"} body={"Clouds cover"}/>
+            <WeatherInfo img={Wind} info={"6 mph"} body={"Wind"}/>
+            <WeatherInfo img={UVIndex} info={"1"} body={"UV Index"}/>
+            <WeatherInfo img={Visibility} info={"20 mi"} body={"Visibility"}/>
           </div>
         </div>
       </div>
