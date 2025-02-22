@@ -1,5 +1,8 @@
 import React from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
+import WeatherCard from '../WeatherCard/WeatherCard';
+import HorizontallyScrollable from '../HorizonalScroll/HorizontalScroll';
+
 import CloudlySun from "../../assets/Images/cloudly-sun.png";
 import Precipitation from "../../assets/Images/precipitation.png";
 import Humidity from "../../assets/Images/humidity.png";
@@ -7,6 +10,9 @@ import Cloud from "../../assets/Images/cloud.png";
 import Wind from "../../assets/Images/wind.png";
 import UVIndex from "../../assets/Images/glasses.png";
 import Visibility from "../../assets/Images/view.png";
+import Moon from "../../assets/Images/moon.png"
+import Sun from "../../assets/Images/sun-icon.png"
+import Rainy from "../../assets/Images/rainy.png"
 
 const Main = () => {
   return (
@@ -38,8 +44,20 @@ const Main = () => {
 
       {/* Block 2 */}
       <div className='mt-10'>
-        <div className='text-center text-[#F0EFEF]'>
-          {/* Add block 2 content here */}
+        <div className='text-[#F0EFEF]'>
+          <h2 className='font-medium text-xl mb-2 text-center sm:text-start'>HOURLY FORECAST</h2>
+          <p className='font-bold text-[14px] mb-5 text-center'>Tue 25/06</p>
+          <HorizontallyScrollable className="flex justify-between gap-1 p-2">
+              <WeatherCard weatherstatusimg={Rainy}/>
+              <WeatherCard weatherstatusimg={Sun}/>
+              <WeatherCard weatherstatusimg={Moon}/>
+              <WeatherCard weatherstatusimg={Sun}/>
+              <WeatherCard weatherstatusimg={Moon}/>
+              <WeatherCard weatherstatusimg={Sun}/>
+              <WeatherCard weatherstatusimg={Moon}/>
+              <WeatherCard weatherstatusimg={Rainy}/>
+              <WeatherCard weatherstatusimg={Sun}/>
+          </HorizontallyScrollable>
         </div>
       </div>
 

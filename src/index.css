@@ -18,3 +18,19 @@
     padding: 0px 10px;
   }
 }
+
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;  /* IE va Edge */
+  scrollbar-width: none;  /* Firefox */
+}
