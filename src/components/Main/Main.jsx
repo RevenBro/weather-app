@@ -45,26 +45,35 @@ const Main = () => {
       {/* Block 2 */}
       <div className='mt-10'>
         <div className='text-[#F0EFEF]'>
-          <h2 className='font-medium text-xl mb-2 text-center sm:text-start'>HOURLY FORECAST</h2>
+          <h2 className='font-medium ml-3 text-xl mb-2 text-center sm:text-start'>HOURLY FORECAST</h2>
           <p className='font-bold text-[14px] mb-5 text-center'>Tue 25/06</p>
           <HorizontallyScrollable className="flex justify-between gap-1 p-2">
-              <WeatherCard weatherstatusimg={Rainy}/>
-              <WeatherCard weatherstatusimg={Sun}/>
-              <WeatherCard weatherstatusimg={Moon}/>
-              <WeatherCard weatherstatusimg={Sun}/>
-              <WeatherCard weatherstatusimg={Moon}/>
-              <WeatherCard weatherstatusimg={Sun}/>
-              <WeatherCard weatherstatusimg={Moon}/>
-              <WeatherCard weatherstatusimg={Rainy}/>
-              <WeatherCard weatherstatusimg={Sun}/>
+              <WeatherCard weatherstatusimg={Rainy} weekly/>
+              <WeatherCard weatherstatusimg={Sun} weekly/>
+              <WeatherCard weatherstatusimg={Moon} weekly/>
+              <WeatherCard weatherstatusimg={Sun} weekly/>
+              <WeatherCard weatherstatusimg={Moon} weekly/>
+              <WeatherCard weatherstatusimg={Sun} weekly/>
+              <WeatherCard weatherstatusimg={Moon} weekly/>
+              <WeatherCard weatherstatusimg={Rainy} weekly/>
+              <WeatherCard weatherstatusimg={Sun} weekly/>
           </HorizontallyScrollable>
         </div>
       </div>
 
       {/* Block 3 */}
       <div className='mt-10'>
-        <div className='text-center text-[#F0EFEF]'>
-          {/* Add block 3 content here */}
+        <div className='text-[#F0EFEF]'>
+          <h2 className='ml-3 font-medium text-xl mb-2 text-center sm:text-start'>WEEKLY FORECAST</h2>
+          <HorizontallyScrollable className="flex justify-between gap-1 p-2">
+              <WeatherCard weatherstatusimg={Rainy} text={"Today"}/>
+              <WeatherCard weatherstatusimg={Sun} text={"Tuesday"}/>
+              <WeatherCard weatherstatusimg={Moon} text={"Wednesday"}/>
+              <WeatherCard weatherstatusimg={Sun} text={"Thursday"}/>
+              <WeatherCard weatherstatusimg={Moon} text={"Friday"}/>
+              <WeatherCard weatherstatusimg={Sun} text={"Saturday"}/>
+              <WeatherCard weatherstatusimg={Moon} text={"Sunday"}/>
+          </HorizontallyScrollable>
         </div>
       </div>
     </div>
