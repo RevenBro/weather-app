@@ -1,8 +1,8 @@
 import React from 'react'
 
-const WeatherInfo = ({icon, value, head, id, unit}) => {
+const WeatherInfo = ({icon, value, head, unit}) => {
   return (
-      <div key={id} className='flex flex-col items-center'>
+      <div className='flex flex-col items-center'>
         <div className='flex items-center justify-center gap-1'>
           <img src={icon} alt={name} width={15} height={15} />
           <div className='flex'>

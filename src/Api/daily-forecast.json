@@ -1,0 +1,829 @@
+{
+  "lat": "51.50853N",
+  "lon": "0.12574W",
+  "elevation": 25,
+  "units": "uk",
+  "daily": {
+    "data": [
+      {
+        "day": "2025-02-23",
+        "weather": "psbl_rain",
+        "icon": 12,
+        "summary": "Mostly cloudy changing to possible rain in the afternoon. Temperature 6/11 °C. Wind from SW.",
+        "predictability": 3,
+        "temperature": 9.0,
+        "temperature_min": 5.8,
+        "temperature_max": 10.8,
+        "feels_like": 5.2,
+        "feels_like_min": 4.2,
+        "feels_like_max": 7.0,
+        "wind_chill": 6.2,
+        "wind_chill_min": 4.0,
+        "wind_chill_max": 8.0,
+        "dew_point": 6.0,
+        "dew_point_min": 3.8,
+        "dew_point_max": 8.0,
+        "wind": {
+          "speed": 13.8,
+          "gusts": 39.4,
+          "dir": "SSW",
+          "angle": 199
+        },
+        "cloud_cover": 75,
+        "pressure": 1020,
+        "precipitation": {
+          "total": 3.6,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 31,
+          "storm": 0.0,
+          "freeze": 6
+        },
+        "ozone": 373.09,
+        "humidity": 81,
+        "visibility": 14.35
+      },
+      {
+        "day": "2025-02-24",
+        "weather": "psbl_rain",
+        "icon": 12,
+        "summary": "Possible rain changing to mostly cloudy in the afternoon. Temperature 8/13 °C.",
+        "predictability": 3,
+        "temperature": 10.5,
+        "temperature_min": 7.8,
+        "temperature_max": 12.5,
+        "feels_like": 7.5,
+        "feels_like_min": 5.2,
+        "feels_like_max": 9.8,
+        "wind_chill": 8.2,
+        "wind_chill_min": 5.8,
+        "wind_chill_max": 10.8,
+        "dew_point": 8.5,
+        "dew_point_min": 6.5,
+        "dew_point_max": 10.2,
+        "wind": {
+          "speed": 10.1,
+          "gusts": 35.7,
+          "dir": "SW",
+          "angle": 218
+        },
+        "cloud_cover": 83,
+        "pressure": 1013,
+        "precipitation": {
+          "total": 6.8,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 53,
+          "storm": 0.0,
+          "freeze": 1
+        },
+        "ozone": 391.34,
+        "humidity": 87,
+        "visibility": 12.39
+      },
+      {
+        "day": "2025-02-25",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Mostly cloudy, fewer clouds in the afternoon and evening. Temperature 5/10 °C.",
+        "predictability": 3,
+        "temperature": 7.5,
+        "temperature_min": 4.5,
+        "temperature_max": 10.2,
+        "feels_like": 5.0,
+        "feels_like_min": 2.5,
+        "feels_like_max": 7.2,
+        "wind_chill": 5.0,
+        "wind_chill_min": 2.0,
+        "wind_chill_max": 7.8,
+        "dew_point": 3.0,
+        "dew_point_min": 0.0,
+        "dew_point_max": 6.0,
+        "wind": {
+          "speed": 8.2,
+          "gusts": 18.5,
+          "dir": "WSW",
+          "angle": 254
+        },
+        "cloud_cover": 62,
+        "pressure": 1015,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 2,
+          "storm": 0.0,
+          "freeze": 13
+        },
+        "ozone": 417.23,
+        "humidity": 74,
+        "visibility": 15.0
+      },
+      {
+        "day": "2025-02-26",
+        "weather": "mostly_cloudy",
+        "icon": 5,
+        "summary": "Partly sunny changing to cloudy by afternoon and evening. Temperature 3/10 °C. Wind from SW in the afternoon.",
+        "predictability": 3,
+        "temperature": 6.2,
+        "temperature_min": 2.5,
+        "temperature_max": 10.0,
+        "feels_like": 3.5,
+        "feels_like_min": 1.0,
+        "feels_like_max": 6.0,
+        "wind_chill": 3.5,
+        "wind_chill_min": 0.0,
+        "wind_chill_max": 7.5,
+        "dew_point": 2.0,
+        "dew_point_min": 0.0,
+        "dew_point_max": 6.2,
+        "wind": {
+          "speed": 9.1,
+          "gusts": 32.0,
+          "dir": "SW",
+          "angle": 229
+        },
+        "cloud_cover": 61,
+        "pressure": 1019,
+        "precipitation": {
+          "total": 0.5,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 15,
+          "storm": 0.0,
+          "freeze": 20
+        },
+        "ozone": 405.45,
+        "humidity": 75,
+        "visibility": 14.61
+      },
+      {
+        "day": "2025-02-27",
+        "weather": "overcast",
+        "icon": 7,
+        "summary": "Cloudy. Temperature 5/9 °C.",
+        "predictability": 3,
+        "temperature": 7.2,
+        "temperature_min": 5.2,
+        "temperature_max": 9.0,
+        "feels_like": 4.0,
+        "feels_like_min": 2.8,
+        "feels_like_max": 5.5,
+        "wind_chill": 4.8,
+        "wind_chill_min": 3.0,
+        "wind_chill_max": 6.5,
+        "dew_point": 0.5,
+        "dew_point_min": -2.2,
+        "dew_point_max": 4.2,
+        "wind": {
+          "speed": 7.4,
+          "gusts": 24.0,
+          "dir": "WNW",
+          "angle": 286
+        },
+        "cloud_cover": 91,
+        "pressure": 1018,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 4,
+          "storm": 0.0,
+          "freeze": 11
+        },
+        "ozone": 388.93,
+        "humidity": 63,
+        "visibility": 15.0
+      },
+      {
+        "day": "2025-02-28",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Mostly cloudy, fewer clouds in the afternoon and evening. Temperature 3/9 °C.",
+        "predictability": 3,
+        "temperature": 5.8,
+        "temperature_min": 3.2,
+        "temperature_max": 9.2,
+        "feels_like": 3.8,
+        "feels_like_min": 1.8,
+        "feels_like_max": 7.8,
+        "wind_chill": 4.5,
+        "wind_chill_min": 2.2,
+        "wind_chill_max": 7.2,
+        "dew_point": 0.0,
+        "dew_point_min": -1.2,
+        "dew_point_max": 2.0,
+        "wind": {
+          "speed": 4.9,
+          "gusts": 12.7,
+          "dir": "E",
+          "angle": 86
+        },
+        "cloud_cover": 71,
+        "pressure": 1016,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 6,
+          "storm": 0.0,
+          "freeze": 21
+        },
+        "ozone": 352.63,
+        "humidity": 66,
+        "visibility": 15.0
+      },
+      {
+        "day": "2025-03-01",
+        "weather": "psbl_rain",
+        "icon": 12,
+        "summary": "Mostly cloudy changing to rain showers by evening. Temperature 4/11 °C.",
+        "predictability": 4,
+        "temperature": 6.5,
+        "temperature_min": 3.5,
+        "temperature_max": 10.5,
+        "feels_like": 4.5,
+        "feels_like_min": 2.2,
+        "feels_like_max": 8.2,
+        "wind_chill": 4.0,
+        "wind_chill_min": 0.8,
+        "wind_chill_max": 8.8,
+        "dew_point": 0.5,
+        "dew_point_min": -2.0,
+        "dew_point_max": 3.0,
+        "wind": {
+          "speed": 4.5,
+          "gusts": 14.0,
+          "dir": "SE",
+          "angle": 127
+        },
+        "cloud_cover": 74,
+        "pressure": 1014,
+        "precipitation": {
+          "total": 1.2,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 8,
+          "storm": 0.0,
+          "freeze": 18
+        },
+        "ozone": 307.96,
+        "humidity": 66,
+        "visibility": 14.96
+      },
+      {
+        "day": "2025-03-02",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Partly sunny changing to rain showers in the afternoon. Temperature 3/9 °C.",
+        "predictability": 4,
+        "temperature": 6.0,
+        "temperature_min": 3.2,
+        "temperature_max": 9.0,
+        "feels_like": 4.5,
+        "feels_like_min": 1.8,
+        "feels_like_max": 7.5,
+        "wind_chill": 4.5,
+        "wind_chill_min": 1.2,
+        "wind_chill_max": 7.5,
+        "dew_point": 2.2,
+        "dew_point_min": 1.2,
+        "dew_point_max": 2.8,
+        "wind": {
+          "speed": 4.6,
+          "gusts": 17.6,
+          "dir": "WNW",
+          "angle": 284
+        },
+        "cloud_cover": 25,
+        "pressure": 1025,
+        "precipitation": {
+          "total": 0.5,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 39,
+          "storm": 0.0,
+          "freeze": 24
+        },
+        "ozone": 314.16,
+        "humidity": 76,
+        "visibility": 14.63
+      },
+      {
+        "day": "2025-03-03",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Partly sunny changing to rain showers in the afternoon. Temperature 5/10 °C.",
+        "predictability": 4,
+        "temperature": 6.8,
+        "temperature_min": 4.5,
+        "temperature_max": 9.5,
+        "feels_like": 5.2,
+        "feels_like_min": 3.0,
+        "feels_like_max": 8.0,
+        "wind_chill": 5.5,
+        "wind_chill_min": 3.0,
+        "wind_chill_max": 8.0,
+        "dew_point": 3.2,
+        "dew_point_min": 2.8,
+        "dew_point_max": 4.0,
+        "wind": {
+          "speed": 4.6,
+          "gusts": 18.2,
+          "dir": "WSW",
+          "angle": 238
+        },
+        "cloud_cover": 59,
+        "pressure": 1023,
+        "precipitation": {
+          "total": 0.5,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 22,
+          "storm": 0.0,
+          "freeze": 16
+        },
+        "ozone": 284.9,
+        "humidity": 78,
+        "visibility": 14.87
+      },
+      {
+        "day": "2025-03-04",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Partly sunny changing to light rain in the afternoon. Temperature 5/9 °C.",
+        "predictability": 4,
+        "temperature": 6.8,
+        "temperature_min": 5.0,
+        "temperature_max": 9.0,
+        "feels_like": 4.8,
+        "feels_like_min": 3.0,
+        "feels_like_max": 7.0,
+        "wind_chill": 5.0,
+        "wind_chill_min": 2.5,
+        "wind_chill_max": 7.5,
+        "dew_point": 2.8,
+        "dew_point_min": 2.5,
+        "dew_point_max": 2.8,
+        "wind": {
+          "speed": 5.5,
+          "gusts": 20.8,
+          "dir": "SW",
+          "angle": 228
+        },
+        "cloud_cover": 70,
+        "pressure": 1018,
+        "precipitation": {
+          "total": 0.4,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 58,
+          "storm": 0.0,
+          "freeze": 15
+        },
+        "ozone": 299.38,
+        "humidity": 74,
+        "visibility": 14.79
+      },
+      {
+        "day": "2025-03-05",
+        "weather": "cloudy",
+        "icon": 6,
+        "summary": "Cloudy, fewer clouds in the afternoon. Temperature 5/10 °C.",
+        "predictability": 4,
+        "temperature": 7.2,
+        "temperature_min": 5.2,
+        "temperature_max": 9.8,
+        "feels_like": 5.0,
+        "feels_like_min": 3.2,
+        "feels_like_max": 7.8,
+        "wind_chill": 5.2,
+        "wind_chill_min": 3.2,
+        "wind_chill_max": 8.2,
+        "dew_point": 3.5,
+        "dew_point_min": 3.0,
+        "dew_point_max": 4.2,
+        "wind": {
+          "speed": 6.0,
+          "gusts": 21.5,
+          "dir": "SW",
+          "angle": 226
+        },
+        "cloud_cover": 91,
+        "pressure": 1016,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 92,
+          "storm": 0.0,
+          "freeze": 11
+        },
+        "ozone": 311.65,
+        "humidity": 77,
+        "visibility": 14.02
+      },
+      {
+        "day": "2025-03-06",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Rain showers. Temperature 5/11 °C.",
+        "predictability": 4,
+        "temperature": 7.5,
+        "temperature_min": 5.0,
+        "temperature_max": 10.5,
+        "feels_like": 5.5,
+        "feels_like_min": 2.5,
+        "feels_like_max": 8.5,
+        "wind_chill": 5.5,
+        "wind_chill_min": 2.5,
+        "wind_chill_max": 9.0,
+        "dew_point": 3.0,
+        "dew_point_min": 2.5,
+        "dew_point_max": 3.5,
+        "wind": {
+          "speed": 5.6,
+          "gusts": 17.0,
+          "dir": "SW",
+          "angle": 216
+        },
+        "cloud_cover": 60,
+        "pressure": 1016,
+        "precipitation": {
+          "total": 1.0,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 53,
+          "storm": 0.0,
+          "freeze": 14
+        },
+        "ozone": 313.5,
+        "humidity": 73,
+        "visibility": 14.65
+      },
+      {
+        "day": "2025-03-07",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Partly sunny changing to light rain in the afternoon. Temperature 6/10 °C.",
+        "predictability": 4,
+        "temperature": 7.5,
+        "temperature_min": 5.8,
+        "temperature_max": 9.8,
+        "feels_like": 5.0,
+        "feels_like_min": 3.8,
+        "feels_like_max": 6.8,
+        "wind_chill": 5.2,
+        "wind_chill_min": 2.8,
+        "wind_chill_max": 7.8,
+        "dew_point": 3.2,
+        "dew_point_min": 3.0,
+        "dew_point_max": 4.0,
+        "wind": {
+          "speed": 8.1,
+          "gusts": 21.9,
+          "dir": "SSW",
+          "angle": 203
+        },
+        "cloud_cover": 65,
+        "pressure": 1013,
+        "precipitation": {
+          "total": 0.5,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 73,
+          "storm": 0.0,
+          "freeze": 12
+        },
+        "ozone": 318.46,
+        "humidity": 74,
+        "visibility": 13.89
+      },
+      {
+        "day": "2025-03-08",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Light rain changing to rain showers by afternoon and evening. Temperature 6/10 °C.",
+        "predictability": 4,
+        "temperature": 7.2,
+        "temperature_min": 5.5,
+        "temperature_max": 10.0,
+        "feels_like": 5.2,
+        "feels_like_min": 3.0,
+        "feels_like_max": 7.5,
+        "wind_chill": 5.2,
+        "wind_chill_min": 2.5,
+        "wind_chill_max": 8.0,
+        "dew_point": 3.5,
+        "dew_point_min": 3.2,
+        "dew_point_max": 3.5,
+        "wind": {
+          "speed": 7.4,
+          "gusts": 20.7,
+          "dir": "SW",
+          "angle": 221
+        },
+        "cloud_cover": 66,
+        "pressure": 1012,
+        "precipitation": {
+          "total": 1.2,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 80,
+          "storm": 0.0,
+          "freeze": 13
+        },
+        "ozone": 367.88,
+        "humidity": 76,
+        "visibility": 14.46
+      },
+      {
+        "day": "2025-03-09",
+        "weather": "rain_shower",
+        "icon": 13,
+        "summary": "Rain showers changing to light rain by afternoon and evening. Temperature 6/10 °C.",
+        "predictability": 4,
+        "temperature": 7.8,
+        "temperature_min": 6.0,
+        "temperature_max": 9.8,
+        "feels_like": 5.8,
+        "feels_like_min": 4.0,
+        "feels_like_max": 7.2,
+        "wind_chill": 5.8,
+        "wind_chill_min": 3.5,
+        "wind_chill_max": 8.2,
+        "dew_point": 4.8,
+        "dew_point_min": 3.8,
+        "dew_point_max": 5.5,
+        "wind": {
+          "speed": 6.5,
+          "gusts": 21.8,
+          "dir": "SSW",
+          "angle": 210
+        },
+        "cloud_cover": 69,
+        "pressure": 1012,
+        "precipitation": {
+          "total": 1.4,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 70,
+          "storm": 0.0,
+          "freeze": 11
+        },
+        "ozone": 365.79,
+        "humidity": 80,
+        "visibility": 14.42
+      },
+      {
+        "day": "2025-03-10",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Partly sunny. Temperature 3/9 °C.",
+        "predictability": 4,
+        "temperature": 6.2,
+        "temperature_min": 3.0,
+        "temperature_max": 8.5,
+        "feels_like": 4.5,
+        "feels_like_min": 1.5,
+        "feels_like_max": 6.0,
+        "wind_chill": 4.5,
+        "wind_chill_min": 1.0,
+        "wind_chill_max": 7.0,
+        "dew_point": 1.5,
+        "dew_point_min": 0.0,
+        "dew_point_max": 5.0,
+        "wind": {
+          "speed": 5.6,
+          "gusts": 20.5,
+          "dir": "W",
+          "angle": 273
+        },
+        "cloud_cover": 45,
+        "pressure": 1019,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 41,
+          "storm": 0.0,
+          "freeze": 20
+        },
+        "ozone": 367.32,
+        "humidity": 72,
+        "visibility": 14.88
+      },
+      {
+        "day": "2025-03-11",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Mostly cloudy, fewer clouds in the afternoon. Temperature 4/8 °C.",
+        "predictability": 4,
+        "temperature": 5.5,
+        "temperature_min": 3.5,
+        "temperature_max": 8.0,
+        "feels_like": 3.8,
+        "feels_like_min": 1.5,
+        "feels_like_max": 6.5,
+        "wind_chill": 4.0,
+        "wind_chill_min": 1.5,
+        "wind_chill_max": 7.0,
+        "dew_point": 0.8,
+        "dew_point_min": -0.2,
+        "dew_point_max": 1.2,
+        "wind": {
+          "speed": 4.4,
+          "gusts": 22.4,
+          "dir": "W",
+          "angle": 260
+        },
+        "cloud_cover": 65,
+        "pressure": 1020,
+        "precipitation": {
+          "total": 0.5,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 78,
+          "storm": 0.0,
+          "freeze": 22
+        },
+        "ozone": 363.72,
+        "humidity": 70,
+        "visibility": 13.9
+      },
+      {
+        "day": "2025-03-12",
+        "weather": "psbl_rain",
+        "icon": 12,
+        "summary": "Cloudy changing to light rain in the afternoon. Temperature 4/7 °C.",
+        "predictability": 4,
+        "temperature": 5.2,
+        "temperature_min": 4.0,
+        "temperature_max": 7.2,
+        "feels_like": 3.2,
+        "feels_like_min": 1.5,
+        "feels_like_max": 5.2,
+        "wind_chill": 3.8,
+        "wind_chill_min": 1.5,
+        "wind_chill_max": 5.8,
+        "dew_point": 0.8,
+        "dew_point_min": -0.2,
+        "dew_point_max": 1.5,
+        "wind": {
+          "speed": 4.5,
+          "gusts": 24.2,
+          "dir": "W",
+          "angle": 278
+        },
+        "cloud_cover": 79,
+        "pressure": 1017,
+        "precipitation": {
+          "total": 0.2,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 54,
+          "storm": 0.0,
+          "freeze": 22
+        },
+        "ozone": 360.38,
+        "humidity": 72,
+        "visibility": 14.46
+      },
+      {
+        "day": "2025-03-13",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Partly sunny, more clouds in the evening. Temperature 3/8 °C.",
+        "predictability": 4,
+        "temperature": 5.2,
+        "temperature_min": 3.2,
+        "temperature_max": 8.0,
+        "feels_like": 3.8,
+        "feels_like_min": 2.2,
+        "feels_like_max": 5.5,
+        "wind_chill": 4.5,
+        "wind_chill_min": 3.2,
+        "wind_chill_max": 6.5,
+        "dew_point": 0.5,
+        "dew_point_min": 0.0,
+        "dew_point_max": 1.0,
+        "wind": {
+          "speed": 3.5,
+          "gusts": 23.6,
+          "dir": "WSW",
+          "angle": 247
+        },
+        "cloud_cover": 61,
+        "pressure": 1018,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 65,
+          "storm": 0.0,
+          "freeze": 24
+        },
+        "ozone": 371.69,
+        "humidity": 70,
+        "visibility": 14.72
+      },
+      {
+        "day": "2025-03-14",
+        "weather": "partly_sunny",
+        "icon": 4,
+        "summary": "Partly sunny, more clouds in the afternoon and evening. Temperature 4/9 °C.",
+        "predictability": 4,
+        "temperature": 6.0,
+        "temperature_min": 3.8,
+        "temperature_max": 8.8,
+        "feels_like": 3.5,
+        "feels_like_min": 1.2,
+        "feels_like_max": 5.8,
+        "wind_chill": 3.8,
+        "wind_chill_min": 0.8,
+        "wind_chill_max": 6.8,
+        "dew_point": 2.0,
+        "dew_point_min": 1.2,
+        "dew_point_max": 3.2,
+        "wind": {
+          "speed": 6.8,
+          "gusts": 23.3,
+          "dir": "WSW",
+          "angle": 249
+        },
+        "cloud_cover": 64,
+        "pressure": 1016,
+        "precipitation": {
+          "total": 0.0,
+          "type": "none"
+        },
+        "probability": {
+          "precipitation": 54,
+          "storm": 0.0,
+          "freeze": 20
+        },
+        "ozone": 372.2,
+        "humidity": 75,
+        "visibility": 14.27
+      },
+      {
+        "day": "2025-03-15",
+        "weather": "psbl_rain",
+        "icon": 12,
+        "summary": "Cloudy changing to light rain in the afternoon. Temperature 5/9 °C.",
+        "predictability": 4,
+        "temperature": 6.8,
+        "temperature_min": 4.5,
+        "temperature_max": 8.5,
+        "feels_like": 3.8,
+        "feels_like_min": 1.5,
+        "feels_like_max": 5.5,
+        "wind_chill": 4.2,
+        "wind_chill_min": 2.0,
+        "wind_chill_max": 6.0,
+        "dew_point": 2.2,
+        "dew_point_min": 1.0,
+        "dew_point_max": 3.8,
+        "wind": {
+          "speed": 7.6,
+          "gusts": 23.8,
+          "dir": "W",
+          "angle": 274
+        },
+        "cloud_cover": 82,
+        "pressure": 1017,
+        "precipitation": {
+          "total": 0.3,
+          "type": "rain"
+        },
+        "probability": {
+          "precipitation": 56,
+          "storm": 0.0,
+          "freeze": 14
+        },
+        "ozone": 375.0,
+        "humidity": 73,
+        "visibility": 14.16
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
-import WeatherCard from '../WeatherCard/WeatherCard';
-import HorizontallyScrollable from '../HorizonalScroll/HorizontalScroll';
-import { getCurrentWeather } from '../../Api';
+import { getCurrentWeather, getDailyForecast, getHourlyForecast } from '../../Api';
+import Forecast from '../Forecast/Forecast';
+import WeatherIcon from '../WeatherIcon/WeatherIcon';
 
 import Precipitation from "../../assets/Images/precipitation.png";
 import Humidity from "../../assets/Images/humidity.png";
@@ -10,16 +10,16 @@ import Cloud from "../../assets/Images/cloud.png";
 import Wind from "../../assets/Images/wind.png";
 import UVIndex from "../../assets/Images/glasses.png";
 import Visibility from "../../assets/Images/view.png";
-import Moon from "../../assets/Images/moon.png"
-import Sun from "../../assets/Images/sun-icon.png"
-import Rainy from "../../assets/Images/rainy.png"
+
 
 const Main = () => {
   const data = getCurrentWeather();
+  const data2 = getHourlyForecast();
+  const data3 = getDailyForecast();
   const {
     cloud_cover, feels_like, humidity, icon_num, precipitation, summary, temperature, uv_index, visibility, wind
   } = data;
-
+  
   const otherInfoWidgets = [
     {
       id: 0,
@@ -71,7 +71,7 @@ const Main = () => {
       <div className='flex flex-col sm:flex-col md:flex-row w-full justify-between gap-5'>
         {/* Left block */}
         <div className='bg-transparent border-green-400 rounded-3xl border-[1.5px] p-8 w-full md:w-1/4'>
-        <img src={`/dist/weather_icons/set04/big/${icon_num}.png`} />
+        <WeatherIcon iconNumber={icon_num} summary={summary}/>
     
           <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>{temperature} °C</h2>
           <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like {feels_like} °C</p>
@@ -84,14 +84,14 @@ const Main = () => {
         <div className='w-full md:w-3/4 flex flex-col p-8 justify-center items-stretch gap-10 bg-transparent border-green-400 rounded-3xl border-[1.5px]'>
           <div className='grid grid-cols-2 md:grid-cols-3 gap-10'>
             {otherInfoWidgets.map(({id, icon, head, value, unit}) => (
-              <WeatherInfo id={id} icon={icon} value={value} unit={unit} head={head}/>
+              <WeatherInfo key={id} icon={icon} value={value} unit={unit} head={head}/>
             ))}
           </div>
         </div>
       </div>
 
       {/* Block 2 */}
-      <div className='mt-10'>
+      {/* <div className='mt-10'>
         <div className='text-[#F0EFEF]'>
           <h2 className='font-medium ml-3 text-xl mb-2 text-center sm:text-start'>HOURLY FORECAST</h2>
           <p className='font-bold text-[14px] mb-5 text-center'>Tue 25/06</p>
@@ -107,10 +107,11 @@ const Main = () => {
               <WeatherCard weatherstatusimg={Sun} weekly/>
           </HorizontallyScrollable>
         </div>
-      </div>
+      </div> */}
+      <Forecast type='hourly' title='HOURLY FORECAST' data={data2}/>
 
       {/* Block 3 */}
-      <div className='mt-10'>
+      {/* <div className='mt-10'>
         <div className='text-[#F0EFEF]'>
           <h2 className='ml-3 font-medium text-xl mb-2 text-center sm:text-start'>WEEKLY FORECAST</h2>
           <HorizontallyScrollable className="flex justify-between gap-1 p-2">
@@ -123,7 +124,8 @@ const Main = () => {
               <WeatherCard weatherstatusimg={Moon} text={"Sunday"}/>
           </HorizontallyScrollable>
         </div>
-      </div>
+      </div> */}
+      <Forecast type='daily' title='21 DAYS FORECAST' data={data3}/>
     </div>
   );
 };
