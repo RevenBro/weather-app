@@ -86,11 +86,6 @@ const Main = () => {
             {otherInfoWidgets.map(({id, icon, head, value, unit}) => (
               <WeatherInfo id={id} icon={icon} value={value} unit={unit} head={head}/>
             ))}
-            {/* <WeatherInfo img={Humidity} info={"48%"} body={"Humidity"}/>
-            <WeatherInfo img={Cloud} info={"50%"} body={"Clouds cover"}/>
-            <WeatherInfo img={Wind} info={"6 mph"} body={"Wind"}/>
-            <WeatherInfo img={UVIndex} info={"1"} body={"UV Index"}/>
-            <WeatherInfo img={Visibility} info={"20 mi"} body={"Visibility"}/> */}
           </div>
         </div>
       </div>
