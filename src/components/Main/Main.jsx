@@ -2,8 +2,8 @@ import React from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import WeatherCard from '../WeatherCard/WeatherCard';
 import HorizontallyScrollable from '../HorizonalScroll/HorizontalScroll';
+import { getCurrentWeather } from '../../Api';
 
-import CloudlySun from "../../assets/Images/cloudly-sun.png";
 import Precipitation from "../../assets/Images/precipitation.png";
 import Humidity from "../../assets/Images/humidity.png";
 import Cloud from "../../assets/Images/cloud.png";
@@ -15,29 +15,82 @@ import Sun from "../../assets/Images/sun-icon.png"
 import Rainy from "../../assets/Images/rainy.png"
 
 const Main = () => {
+  const data = getCurrentWeather();
+  const {
+    cloud_cover, feels_like, humidity, icon_num, precipitation, summary, temperature, uv_index, visibility, wind
+  } = data;
+
+  const otherInfoWidgets = [
+    {
+      id: 0,
+      icon: Precipitation,
+      head: 'Precipitation',
+      value: Math.round(precipitation.total),
+      unit: 'in/h'
+    },
+    {
+      id: 1,
+      icon: Wind,
+      head: 'Wind',
+      value: Math.round(wind.speed),
+      unit: 'mph'
+    },
+    {
+      id: 2,
+      icon: Humidity,
+      head: 'Humidity',
+      value: Math.round(humidity),
+      unit: '%'
+    },
+    {
+      id: 3,
+      icon: UVIndex,
+      head: 'UV index',
+      value: Math.round(uv_index),
+      unit: '%'
+    },
+    {
+      id: 4,
+      icon: Cloud,
+      head: 'Clouds cover',
+      value: Math.round(cloud_cover),
+      unit: '%'
+    },
+    {
+      id: 5,
+      icon: Visibility,
+      head: 'Visibility',
+      value: Math.round(visibility),
+      unit: 'mi'
+    },
+  ]
+
   return (
     <div className='bg-black min-h-screen px-5 pt-5'>
       {/* Block 1 */}
       <div className='flex flex-col sm:flex-col md:flex-row w-full justify-between gap-5'>
         {/* Left block */}
         <div className='bg-transparent border-green-400 rounded-3xl border-[1.5px] p-8 w-full md:w-1/4'>
-          <img className='mb-4' src={CloudlySun} alt="Cloudly" width={50} height={50} />
-          <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>10 °C</h2>
-          <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like 10 °C</p>
-          <div className='my-5'>
-            <span className='text-[#F0EFEF] text-xl font-sans'>Mostly cloudy</span>
+        <img src={`/dist/weather_icons/set04/big/${icon_num}.png`} />
+    
+          <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>{temperature} °C</h2>
+          <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like {feels_like} °C</p>
+          <div className='my-2'>
+            <span className='text-[#F0EFEF] text-xl font-sans'>{summary}</span>
           </div>
         </div>
 
         {/* Right block */}
         <div className='w-full md:w-3/4 flex flex-col p-8 justify-center items-stretch gap-10 bg-transparent border-green-400 rounded-3xl border-[1.5px]'>
           <div className='grid grid-cols-2 md:grid-cols-3 gap-10'>
-            <WeatherInfo img={Precipitation} info={"0 in/h"} body={"Precipitation"}/>
-            <WeatherInfo img={Humidity} info={"48%"} body={"Humidity"}/>
+            {otherInfoWidgets.map(({id, icon, head, value, unit}) => (
+              <WeatherInfo id={id} icon={icon} value={value} unit={unit} head={head}/>
+            ))}
+            {/* <WeatherInfo img={Humidity} info={"48%"} body={"Humidity"}/>
             <WeatherInfo img={Cloud} info={"50%"} body={"Clouds cover"}/>
             <WeatherInfo img={Wind} info={"6 mph"} body={"Wind"}/>
             <WeatherInfo img={UVIndex} info={"1"} body={"UV Index"}/>
-            <WeatherInfo img={Visibility} info={"20 mi"} body={"Visibility"}/>
+            <WeatherInfo img={Visibility} info={"20 mi"} body={"Visibility"}/> */}
           </div>
         </div>
       </div>
