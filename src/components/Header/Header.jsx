@@ -1,4 +1,4 @@
-import { Map, Search, Settings, Sun } from 'lucide-react'
+import { Map, Search, Sun } from 'lucide-react'
 import React from 'react'
 import Input from '../Input/Input'
 
