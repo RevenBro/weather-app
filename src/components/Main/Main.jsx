@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import { getCurrentWeather, getDailyForecast, getHourlyForecast } from '../../Api';
 import Forecast from '../Forecast/Forecast';
@@ -10,6 +10,8 @@ import Cloud from "../../assets/Images/cloud.png";
 import Wind from "../../assets/Images/wind.png";
 import UVIndex from "../../assets/Images/glasses.png";
 import Visibility from "../../assets/Images/view.png";
+import Loader from '../Loader/Loader';
+import WeatherContext from '../../context/weather.context';
 
 
 const Main = () => {
@@ -65,6 +67,8 @@ const Main = () => {
     },
   ]
 
+  const {loading} = useContext(WeatherContext);
+
   return (
     <div className='bg-black min-h-screen px-5 pt-5'>
       {/* Block 1 */}
@@ -91,43 +95,12 @@ const Main = () => {
       </div>
 
       {/* Block 2 */}
-      {/* <div className='mt-10'>
-        <div className='text-[#F0EFEF]'>
-          <h2 className='font-medium ml-3 text-xl mb-2 text-center sm:text-start'>HOURLY FORECAST</h2>
-          <p className='font-bold text-[14px] mb-5 text-center'>Tue 25/06</p>
-          <HorizontallyScrollable className="flex justify-between gap-1 p-2">
-              <WeatherCard weatherstatusimg={Rainy} weekly/>
-              <WeatherCard weatherstatusimg={Sun} weekly/>
-              <WeatherCard weatherstatusimg={Moon} weekly/>
-              <WeatherCard weatherstatusimg={Sun} weekly/>
-              <WeatherCard weatherstatusimg={Moon} weekly/>
-              <WeatherCard weatherstatusimg={Sun} weekly/>
-              <WeatherCard weatherstatusimg={Moon} weekly/>
-              <WeatherCard weatherstatusimg={Rainy} weekly/>
-              <WeatherCard weatherstatusimg={Sun} weekly/>
-          </HorizontallyScrollable>
-        </div>
-      </div> */}
       <Forecast type='hourly' title='HOURLY FORECAST' data={data2}/>
 
       {/* Block 3 */}
-      {/* <div className='mt-10'>
-        <div className='text-[#F0EFEF]'>
-          <h2 className='ml-3 font-medium text-xl mb-2 text-center sm:text-start'>WEEKLY FORECAST</h2>
-          <HorizontallyScrollable className="flex justify-between gap-1 p-2">
-              <WeatherCard weatherstatusimg={Rainy} text={"Today"}/>
-              <WeatherCard weatherstatusimg={Sun} text={"Tuesday"}/>
-              <WeatherCard weatherstatusimg={Moon} text={"Wednesday"}/>
-              <WeatherCard weatherstatusimg={Sun} text={"Thursday"}/>
-              <WeatherCard weatherstatusimg={Moon} text={"Friday"}/>
-              <WeatherCard weatherstatusimg={Sun} text={"Saturday"}/>
-              <WeatherCard weatherstatusimg={Moon} text={"Sunday"}/>
-          </HorizontallyScrollable>
-        </div>
-      </div> */}
       <Forecast type='daily' title='21 DAYS FORECAST' data={data3}/>
     </div>
-  );
+  )
 };
 
 export default Main;
