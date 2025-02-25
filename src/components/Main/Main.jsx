@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
-import { getCurrentWeather, getDailyForecast, getHourlyForecast } from '../../Api';
 import Forecast from '../Forecast/Forecast';
 import WeatherIcon from '../WeatherIcon/WeatherIcon';
 
@@ -15,26 +14,25 @@ import WeatherContext from '../../context/weather.context';
 
 
 const Main = () => {
-  const data = getCurrentWeather();
-  const data2 = getHourlyForecast();
-  const data3 = getDailyForecast();
+  const { loading, currentWeather, hourlyForecast, dailyForecast} = useContext(WeatherContext);
+
   const {
     cloud_cover, feels_like, humidity, icon_num, precipitation, summary, temperature, uv_index, visibility, wind
-  } = data;
+  } = currentWeather;
   
   const otherInfoWidgets = [
     {
       id: 0,
       icon: Precipitation,
       head: 'Precipitation',
-      value: Math.round(precipitation.total),
+      value: Math.round(precipitation?.total),
       unit: 'in/h'
     },
     {
       id: 1,
       icon: Wind,
       head: 'Wind',
-      value: Math.round(wind.speed),
+      value: Math.round(wind?.speed),
       unit: 'mph'
     },
     {
@@ -66,8 +64,8 @@ const Main = () => {
       unit: 'mi'
     },
   ]
-
-  const {loading} = useContext(WeatherContext);
+  
+  if (loading ) return <Loader />;
 
   return (
     <div className='bg-black min-h-screen px-5 pt-5'>
@@ -95,10 +93,10 @@ const Main = () => {
       </div>
 
       {/* Block 2 */}
-      <Forecast type='hourly' title='HOURLY FORECAST' data={data2}/>
+      <Forecast type='hourly' title='HOURLY FORECAST' data={hourlyForecast}/>
 
       {/* Block 3 */}
-      <Forecast type='daily' title='21 DAYS FORECAST' data={data3}/>
+      <Forecast type='daily' title='21 DAYS FORECAST' data={dailyForecast}/>
     </div>
   )
 };

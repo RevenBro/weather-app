@@ -7,7 +7,7 @@ const WeatherInfo = ({icon, value, head, unit}) => {
           <img src={icon} alt={name} width={15} height={15} />
           <div className='flex'>
             <span className='text-[#F0EFEF] text-[12px] sm:text-[18px]'>{value}</span>
-            <span className='text-[#F0EFEF] text-[12px] sm:text-[18px]'> {unit}</span>
+            <span className='text-[#F0EFEF] text-[12px] sm:text-[18px]'>{unit}</span>
           </div>
         </div>
           <p className='text-[#F0EFEF] text-[12px] sm:text-[18px] opacity-80'>{head}</p>
