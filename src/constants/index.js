@@ -8,4 +8,12 @@ export const DEFAULT_PLACE = {
   lon:"69.21627E",
   timezone:"Asia/Tashkent",
   type:"settlement"
+};
+
+export const MEASUREMENT_SYSTEMS = {
+  AUTO: "auto",
+  METRIC: "metric",
+  UK: "uk",
+  US: "us",
+  CA: "ca",
 }

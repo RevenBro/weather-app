@@ -1,7 +1,8 @@
 import { Map, Search, Sun } from 'lucide-react'
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Input from '../Input/Input'
 import WeatherContext from '../../context/weather.context'
+import SettingsIcon from '../Settings/Settings'
 
 const Header = () => {
   const {place} = useContext(WeatherContext);
@@ -19,8 +20,9 @@ const Header = () => {
         <Search className='absolute top-[25%] left-[6px]' size={15} color='white'/>
         <Input/>  
       </div>
-      <div className='flex items-center sm:gap-3'>
-        <Sun color='white' className='cursor-pointer w-10 sm:w-20'/>
+      <div className='flex items-center gap-1 sm:gap-3'>
+        <Sun color='white' className='cursor-pointer'/>
+        <SettingsIcon/>
       </div>
     </div>
   )

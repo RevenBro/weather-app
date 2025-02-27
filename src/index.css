@@ -34,3 +34,55 @@
   -ms-overflow-style: none;  /* IE va Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.settings-menu {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  right: 2rem;
+
+  border-radius: 0.5rem;
+  background-color: #252527;
+  width: 250px;
+
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+
+  @include no-text-select;
+
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  &.open {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+.measurement-systems {
+  padding: 0.5rem;
+}
+.systems {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.system {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+  border: 1px solid rgb(83, 81, 78);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+    &.active {
+      background-color: white;
+      color: black;
+    }
+}
+
+
