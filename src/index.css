@@ -63,11 +63,13 @@
 .measurement-systems {
   padding: 0.5rem;
 }
+
 .systems {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0.5rem;
 }
+
 .system {
   display: flex;
   align-items: center;
@@ -85,4 +87,57 @@
     }
 }
 
+.search-container {
+  display: flex;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 0 1rem;
+}
 
+.search-icon, .search-input input {
+  height: 40px;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-right: 1rem;
+}
+
+.search-input input {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-results {
+  border-radius: 0.5rem;
+  background-color: #252527;
+  position: absolute;
+  right: 0;
+
+  z-index: 1;
+  top: 65px;
+  max-height: 50vh;
+  overflow-x: hidden;
+  color: white;
+    width: 300px;
+}
+
+.results-container {
+
+ .result {
+  padding: 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+    &:hover {
+      background-color: wheat;
+      color: black;
+    }
+  }
+}
