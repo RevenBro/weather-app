@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import Forecast from '../Forecast/Forecast';
+import WeatherContext from '../../context/weather.context';
 import WeatherIcon from '../WeatherIcon/WeatherIcon';
 
 import Precipitation from "../../assets/Images/precipitation.png";
@@ -10,11 +11,11 @@ import Wind from "../../assets/Images/wind.png";
 import UVIndex from "../../assets/Images/glasses.png";
 import Visibility from "../../assets/Images/view.png";
 import Loader from '../Loader/Loader';
-import WeatherContext from '../../context/weather.context';
 
 
 const Main = () => {
   const { loading, currentWeather, hourlyForecast, dailyForecast} = useContext(WeatherContext);
+  const { units } = useContext(WeatherContext);
 
   const {
     cloud_cover, feels_like, humidity, icon_num, precipitation, summary, temperature, uv_index, visibility, wind
@@ -26,42 +27,42 @@ const Main = () => {
       icon: Precipitation,
       head: 'Precipitation',
       value: Math.round(precipitation?.total),
-      unit: 'in/h'
+      unit: units?.precipitation
     },
     {
       id: 1,
       icon: Wind,
       head: 'Wind',
       value: Math.round(wind?.speed),
-      unit: 'mph'
+      unit: units?.wind_speed
     },
     {
       id: 2,
       icon: Humidity,
       head: 'Humidity',
       value: Math.round(humidity),
-      unit: '%'
+      unit: units?.humidity
     },
     {
       id: 3,
       icon: UVIndex,
       head: 'UV index',
       value: Math.round(uv_index),
-      unit: '%'
+      unit: units?.uv_index
     },
     {
       id: 4,
       icon: Cloud,
       head: 'Clouds cover',
       value: Math.round(cloud_cover),
-      unit: '%'
+      unit: units?.cloud_cover
     },
     {
       id: 5,
       icon: Visibility,
       head: 'Visibility',
       value: Math.round(visibility),
-      unit: 'mi'
+      unit: units?.visibility
     },
   ]
   
@@ -75,8 +76,8 @@ const Main = () => {
         <div className='bg-transparent border-green-400 rounded-3xl border-[1.5px] p-8 w-full md:w-1/4'>
         <WeatherIcon iconNumber={icon_num} summary={summary}/>
     
-          <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>{temperature} °C</h2>
-          <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like {feels_like} °C</p>
+          <h2 className='text-[#F0EFEF] text-5xl font-medium mb-1'>{temperature} {units.temperature}</h2>
+          <p className='text-[#F0EFEF] opacity-70 font-light text-[15px]'>feels like {feels_like} {units.temperature}</p>
           <div className='my-2'>
             <span className='text-[#F0EFEF] text-xl font-sans'>{summary}</span>
           </div>

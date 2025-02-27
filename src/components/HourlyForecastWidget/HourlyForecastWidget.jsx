@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import WeatherIcon from '../WeatherIcon/WeatherIcon'
 
 import { Send, Moon } from 'lucide-react'
+import WeatherContext from '../../context/weather.context'
 
 const HourlyForecastWidget = ({data}) => {
+  const {units} = useContext(WeatherContext);
   const {
     date, icon, summary, temperature, precipitation, wind
   } = data;
@@ -41,14 +43,13 @@ const HourlyForecastWidget = ({data}) => {
                    <div className='rounded-3xl p-4 sm:p-7 border-green-400 border-[1.5px] flex flex-col items-center gap-1'>
                      <p className='text-[#F0EFEF] opacity-80 text-[14px]'>{weather_date.time}</p>
                      <WeatherIcon iconNumber={icon} summary={summary}/>
-                     <p className='text-[#F0EFEF] opacity-80'>{Math.round(temperature)} °C</p>
+                     <p className='text-[#F0EFEF] opacity-80'>{Math.round(temperature)} {units.temperature}</p>
                      <div className='flex items-center justify-center gap-1'>
-                       {/* <img src={Moon} alt="Precipitaion" width={15} height={15}/> */}
                        <Moon width={15} height={15}/>
-                       <p className='text-[#F0EFEF] opacity-80 text-[14px]'>{Math.round(precipitation.total)} mm/h</p>
+                       <p className='text-[#F0EFEF] opacity-80 text-[14px]'>{Math.round(precipitation.total)} {units.precipitation}</p>
                      </div>
                      <div className='flex items-center justify-center gap-1'>
-                       <p className='text-[#F0EFEF] opacity-80 text-[14px]'>{Math.round(wind.speed)} mph </p>
+                       <p className='text-[#F0EFEF] opacity-80 text-[14px]'>{Math.round(wind.speed)} {units.wind_speed} </p>
                        <Send style={{ transform: `rotate(${-45 + wind.angle}deg)`}} width={15} height={15}/>
                      </div>
                    </div>

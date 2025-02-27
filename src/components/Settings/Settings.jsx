@@ -13,7 +13,7 @@ const SettingsIcon = () => {
 
   return (
     <div onClick={() => setOpenSettings((prevVal) => !prevVal)}>
-      <Settings color='white' className='cursor-pointer'/>
+      <Settings color='white' className={`cursor-pointer ${openSettings ? "rotate-90 transition-all ease-in-out" : ""}`}/>
       <div className={`${openSettings ? 'open' : ''} settings-menu `}>
         <div>
           <h4>Measurement Systems:</h4>
